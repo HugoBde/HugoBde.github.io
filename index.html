@@ -1,12 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1"/>
-        <title>Hugo Bouderlique</title>
-    </head>
 
-    <body>
-        <h1>Hello world!</h1>
-    </body>
+<head>
+    <!-- META -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="public/stylesheets/style.css"/>
+
+    <!-- Scripts -->
+    <script src="public/scripts/modal.js" defer></script>
+
+    <!-- Google Fonts CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho&display=swap" rel="stylesheet">
+
+    <!-- MISC-->
+    <title>Hugo Bouderlique</title>
+</head>
+
+<body>
+    <div id="mainContent">
+        <div style="text-align: left;">
+            <h1>Hugo Bouderlique</h1>
+            <p>
+                Software engineering student, specialising in cybersecurity and cloud services.<br>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam maxime repudiandae reprehenderit tempora placeat cum sit, earum possimus error voluptas nesciunt laborum ullam eaque corrupti, explicabo rem fugiat veniam? Veniam!
+            </p>
+        </div>
+    </div>
+    <div id="modal">
+        <div id="modalBody">
+            <figure>
+                <img src="images/Work In Progress Cropped.png" style="height: 500px">
+                <figcaption>
+                    Fig. 1 Personal protection equipment
+                </figcaption>
+            </figure>
+            <p>This website is under construction.<br><span onclick="closeModal()" style="cursor: pointer; text-decoration: underline;">Access anyway</span></p>
+        </div>
+    </div>
+
+</body>
+
 </html>
