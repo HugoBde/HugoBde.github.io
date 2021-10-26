@@ -6,6 +6,7 @@ function closeModal() {
 }
 
 function showModal() {
+    modal.style.display = "flex"
     modal.classList.add("modalOpeningAnimation")
     setTimeout(() => modal.classList.remove("modalOpeningAnimation"), 750)
 }
