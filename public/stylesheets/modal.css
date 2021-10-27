@@ -21,7 +21,7 @@
 
 #modalBody img {
     max-width: 75vw;
-    max-height: 500px;
+    max-height: 75vh;
 }
 
 @keyframes fadeIn {
