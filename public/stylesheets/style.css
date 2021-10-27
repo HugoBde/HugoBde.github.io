@@ -1,16 +1,14 @@
+@import "modal.css";
+
 html {
     height: 100%;
 }
 
 body {
-    height: 100%;
-    width: 100%;
-
-    display: flex;
+    display:flex;
     flex-direction: column;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
-
     margin: 0;
 }
 
@@ -32,61 +30,57 @@ figcaption {
     margin-top: 0 !important;
 }
 
-img {
+.certification {
+    width: 75px;
+    height: auto;
+    vertical-align: middle;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%) saturate(100%);
+    animation: float;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes float {
+    from {transform: translateY(-5%);}
+    to {transform: translateY(5%);}
+}
+
+#wip {
     border: 2px solid black;
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
 }
 
-#mainContent {
-    position: absolute;
+main {
     z-index: 0;
-
-    width: 75%;
-    
-    text-align: center;
-}
-
-
-#modal {
-    position: absolute;
-    display: none;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
     align-items: center;
-    justify-content: center;
-    z-index: 1;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.4);
-    backdrop-filter: blur(5px);
-    
+    width: 80%;
 }
 
-
-#modalBody {
-    text-align: center;
-    background: white;
-    box-shadow: 0 0 15px 0 black;
+main div {
+    border: 2px solid black;
+    margin: 2em;
+    padding: 1em;
+    width: 80%;
 }
 
-#modalBody img {
-    max-width: 75vw;
-    max-height: 500px;
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 0;
+    border-bottom: 2px solid black;
+    width: 80%;
 }
 
-@keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity: 1;}
-}
-
-.modalFadeIn {
-    animation-name: fadeIn;
-    animation-duration: 0.75s;
-    animation-timing-function: ease-in-out;
-}
-
-.modalFadeOut {
-    animation-name: fadeIn;
-    animation-duration: 0.75s;
-    animation-direction: reverse;
-    animation-timing-function: ease-in-out;
+nav li {
+    display: inline-block;
+    padding-left: 1em;
 }

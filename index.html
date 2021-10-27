@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Local CSS -->
-    <link rel="stylesheet" href="public/stylesheets/style.css"/>
+    <link rel="stylesheet" href="public/stylesheets/style.css" />
 
     <!-- Scripts -->
     <script src="public/scripts/modal.js" defer></script>
@@ -22,18 +22,52 @@
 </head>
 
 <body>
-    <div id="mainContent">
-        <div style="text-align: left;">
-            <h1>Hugo Bouderlique</h1>
-            <p>
-                Software engineering student, specialising in cybersecurity and cloud services.<br>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam maxime repudiandae reprehenderit tempora placeat cum sit, earum possimus error voluptas nesciunt laborum ullam eaque corrupti, explicabo rem fugiat veniam? Veniam!
-            </p>
+    <!-- NAV BAR -->
+    <nav>
+        <a href="#">
+            <h2>hugobde.io</h2>
+        </a>
+        <ul>
+            <li>
+                <a href="#">
+                    Blog
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Contact
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <div id="summary">
+            <h1>Who am I?</h1>
+                I am a Software engineering student, specialising in cybersecurity and cloud services.<br>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam maxime repudiandae reprehenderit tempora placeat cum sit, earum possimus error voluptas nesciunt laborum ullam eaque corrupti, explicabo rem fugiat veniam? Veniam!
         </div>
-    </div>
+        <div id="portfolio" style="height: 2000px;">
+            <h1>Portfolio</h1>
+        </div>
+        <div id="education">
+            <p style="color: red">Caution: All currently listed diplomas and certifications are placeholders</p>
+            <h1>Education</h1>
+            <ul>
+                <li>Bachelor of Engineering (Honours), Diploma of Professional Practice</li>
+            </ul>
+            <h1>Certifications</h1>
+            <ul>
+                <li>AWS Solution Architect - Associate<img class="certification" src="//d1.awsstatic.com/training-and-certification/Certification%20Badges/AWS-Certified_Solutions-Architect_Associate_badge_512x512.139edbefd4d7e9a16213032f592bdd8ca769dced.png"></li>
+            </ul>
+        </div>
+    </main>
+
+    <!-- WIP Modal -->
     <div id="modal">
         <div id="modalBody">
             <figure>
-                <img src="images/Work In Progress Cropped.png">
+                <img id="wip" src="images/Work In Progress Cropped.png">
                 <figcaption>
                     Fig. 1 Personal protective equipment
                 </figcaption>

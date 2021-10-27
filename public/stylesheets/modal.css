@@ -1,0 +1,43 @@
+/* Modal, modal content and modal animation */
+#modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(5px);
+}
+
+#modalBody {
+    text-align: center;
+    background: white;
+    box-shadow: 0 0 15px 0 black;
+}
+
+#modalBody img {
+    max-width: 75vw;
+    max-height: 500px;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.modalFadeIn {
+    animation-name: fadeIn;
+    animation-duration: 0.75s;
+    animation-timing-function: ease-in-out;
+}
+
+.modalFadeOut {
+    animation-name: fadeIn;
+    animation-duration: 0.75s;
+    animation-direction: reverse;
+    animation-timing-function: ease-in-out;
+}
