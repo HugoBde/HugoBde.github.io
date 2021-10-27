@@ -1,6 +1,6 @@
 /* Modal, modal content and modal animation */
 #modal {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     display: none;

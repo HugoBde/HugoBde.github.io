@@ -11,24 +11,4 @@ function showModal() {
     setTimeout(() => modal.classList.remove("modalFadeIn"), 750)
 }
 
-function getScrollTop() {
-    if (typeof window.pageYOffset !== "undefined" ) {
-        // Most browsers
-        return window.pageYOffset;
-    }
-  
-    let d = document.documentElement;
-    if (typeof d.clientHeight !== "undefined") {
-        // IE in standards mode
-        return d.scrollTop;
-    }
-  
-    // IE in quirks mode
-    return document.body.scrollTop;
-}
-
-window.onscroll = function() {
-    let scroll = getScrollTop();
-    modal.style.top = scroll + "px";
-};
 showModal()
