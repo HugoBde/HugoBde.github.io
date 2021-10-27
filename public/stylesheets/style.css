@@ -30,24 +30,6 @@ figcaption {
     margin-top: 0 !important;
 }
 
-.certification {
-    width: 75px;
-    height: auto;
-    vertical-align: middle;
-    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(100%) saturate(100%);
-    animation: float;
-    animation-duration: 2s;
-    animation-direction: alternate;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-}
-
-@keyframes float {
-    from {transform: translateY(-5%);}
-    to {transform: translateY(5%);}
-}
-
 #wip {
     border: 2px solid black;
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
@@ -85,4 +67,16 @@ nav {
 nav li {
     display: inline-block;
     padding-left: 1em;
+}
+
+#filter {
+    backdrop-filter: invert(100%);
+    z-index: 1;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+main h1 {
+    border-bottom: 2px solid black;
 }
