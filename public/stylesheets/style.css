@@ -73,22 +73,20 @@ img {
     max-height: 500px;
 }
 
-@keyframes closingAnimation {
-    from {opacity: 1;}
-    to {opacity: 0;}
-}
-
-.modalClosingAnimation {
-    animation-name: closingAnimation;
-    animation-duration: 0.75s;
-}
-
-@keyframes openingAnimation {
+@keyframes fadeIn {
     from {opacity: 0;}
     to {opacity: 1;}
 }
 
-.modalOpeningAnimation {
-    animation-name: openingAnimation;
+.modalFadeIn {
+    animation-name: fadeIn;
     animation-duration: 0.75s;
+    animation-timing-function: ease-in-out;
+}
+
+.modalFadeOut {
+    animation-name: fadeIn;
+    animation-duration: 0.75s;
+    animation-direction: reverse;
+    animation-timing-function: ease-in-out;
 }

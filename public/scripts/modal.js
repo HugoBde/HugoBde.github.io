@@ -1,14 +1,14 @@
 const modal = document.getElementById("modal")
 
 function closeModal() {
-    modal.classList.add("modalClosingAnimation")
-    setTimeout(() => modal.style.display = "none" ,500)
+    modal.classList.add("modalFadeOut")
+    setTimeout(() => modal.style.display = "none" ,700)
 }
 
 function showModal() {
     modal.style.display = "flex"
-    modal.classList.add("modalOpeningAnimation")
-    setTimeout(() => modal.classList.remove("modalOpeningAnimation"), 750)
+    modal.classList.add("modalFadeIn")
+    setTimeout(() => modal.classList.remove("modalFadeIn"), 750)
 }
 
 showModal()
