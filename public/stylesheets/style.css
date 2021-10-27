@@ -78,6 +78,8 @@ nav {
     z-index: 0;
     border-bottom: 2px solid black;
     width: 80%;
+    position: sticky;
+    top: 0;
 }
 
 nav li {
