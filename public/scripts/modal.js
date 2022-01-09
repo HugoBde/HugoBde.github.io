@@ -6,9 +6,8 @@ function closeModal() {
 }
 
 function showModal() {
-    modal.style.display = "flex"
     modal.classList.add("modalFadeIn")
     setTimeout(() => modal.classList.remove("modalFadeIn"), 750)
 }
 
-showModal()
+// showModal()
