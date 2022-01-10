@@ -91,6 +91,18 @@ main > div > h1 {
     border-bottom: 2px solid black;
 }
 
+#contact-list > div {
+    margin: 1em 1em 0 1em;
+}
+
+#contact-list a {
+    text-decoration: none;
+}
+
+#contact-list a:hover {
+    text-decoration: underline;
+}
+
 /* :target::before {
     content: "";
     display: block;
