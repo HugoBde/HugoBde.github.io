@@ -41,3 +41,20 @@
     animation-direction: reverse;
     animation-timing-function: ease-in-out;
 }
+
+
+#wip {
+    border: 2px solid black;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+#modal figure {
+    margin: 1em;
+}
+
+#modal figcaption {
+    text-align: center;
+    font-size: 0.75em;
+    margin-top: 0 !important;
+}

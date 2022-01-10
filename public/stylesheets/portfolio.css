@@ -1,0 +1,33 @@
+.portfolio-entry {
+    margin: 1em;
+}
+
+.portfolio-entry:hover a{
+    text-decoration: none;
+}
+
+
+.portfolio-name{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.portfolio-description {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.portfolio-entry img{
+    width: 100%;
+}
+
+.portfolio-entry figure {
+    margin: 1em 0 0;
+    border: 2px solid black;
+    padding: 1em;
+    width: 50%;
+}
+
+.portfolio-entry figcaption {
+    font-size: 0.75em;
+}

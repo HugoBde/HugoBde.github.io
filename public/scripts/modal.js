@@ -10,4 +10,4 @@ function showModal() {
     setTimeout(() => modal.classList.remove("modalFadeIn"), 750)
 }
 
-// showModal()
+showModal()
