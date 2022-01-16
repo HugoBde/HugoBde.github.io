@@ -66,6 +66,6 @@ nav li {
 }
 
 
-main > div > h1 {
+.section-header {
     border-bottom: 2px solid black;
 }
