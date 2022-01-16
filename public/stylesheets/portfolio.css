@@ -19,15 +19,27 @@
 
 .portfolio-entry img{
     width: 100%;
+    max-width: 100%;
 }
 
 .portfolio-entry figure {
-    margin: 1em 0 0;
+    margin: 1em 1em 0;
     border: 2px solid black;
     padding: 1em;
-    width: 50%;
+    box-sizing: border-box;
+    max-width: 100%;
+    flex-basis: 45%;
+    flex-grow: 1;
 }
 
 .portfolio-entry figcaption {
     font-size: 0.75em;
+}
+
+.portfolio-gifs {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
 }
