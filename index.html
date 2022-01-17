@@ -5,19 +5,20 @@
     <!-- META -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" href="public/favicon.png"/>
+    <link rel="icon" href="public/favicon.png" />
 
     <!-- Local CSS -->
-    <link rel="stylesheet" href="public/stylesheets/style.css"/>
-    <link rel="stylesheet" href="public/stylesheets/summary.css"/>
-    <link rel="stylesheet" href="public/stylesheets/portfolio.css"/>
-    <link rel="stylesheet" href="public/stylesheets/contacts.css"/>
-    <link rel="stylesheet" href="public/stylesheets/contact-form.css"/>
-    <link rel="stylesheet" href="public/stylesheets/modal.css"/>
+    <link rel="stylesheet" href="public/stylesheets/style.css" />
+    <link rel="stylesheet" href="public/stylesheets/summary.css" />
+    <link rel="stylesheet" href="public/stylesheets/portfolio.css" />
+    <link rel="stylesheet" href="public/stylesheets/contacts.css" />
+    <link rel="stylesheet" href="public/stylesheets/contact-form.css" />
+    <link rel="stylesheet" href="public/stylesheets/modal.css" />
 
     <!-- Local Scripts -->
     <script src="public/scripts/modal.js" defer></script>
     <script src="public/scripts/contactme.js" defer></script>
+    <script src="public/scripts/navbar.js" defer></script>
 
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-P36VN14BX8"></script>
@@ -38,34 +39,47 @@
 <body>
     <!-- NAV BAR -->
     <nav>
-        <a href="#">
-            <h2>hugobde.io</h2>
-        </a>
-        <ul>
-            <li>
+        <div id="navbar">
+            <a href="#">
+                <h2>hugobde.io</h2>
+            </a>
+            <img id="hamburger-menu" src="images/hamburger.svg"/>
+            <div id="navbar-links">
                 <a href="#portfolio">
                     Projects
                 </a>
-            </li>
-            <li>
                 <a href="#contact">
-                    Contact
+                    Contacts
                 </a>
-            </li>
-            <li>
                 <a href="#">
                     Blog
                 </a>
-            </li>
-        </ul>
+            </div>
+        </div>
     </nav>
+
+    <div id="responsive-links" class="hidden">
+        <a href="#portfolio">
+            Projects
+        </a>
+        <a href="#contact">
+            Contacts
+        </a>
+        <a href="#">
+            Blog
+        </a>
+    </div>
 
     <!-- MAIN CONTENT -->
     <main>
         <div id="summary">
             <h1 class="section-header">Who am I?</h1>
             <p>
-                I am a Software engineering student at the University of Technology Sydney, specializing in real-time and embedded systems.<br>I am currently looking for a part-time IT position in the Sydney area, and am also open to requests for freelance web development. If you are interested, do not hesitate to <span style="text-decoration: underline; cursor: pointer;" onclick="my_contact_form.open_form()">contact me</span>.
+                I am a Software engineering student at the University of Technology Sydney, specializing in real-time
+                and embedded systems.<br>I am currently looking for a part-time IT position in the Sydney area, and am
+                also open to requests for freelance web development. If you are interested, do not hesitate to <span
+                    style="text-decoration: underline; cursor: pointer;" onclick="my_contact_form.open_form()">contact
+                    me</span>.
             </p>
         </div>
         <div id="portfolio">
@@ -106,16 +120,16 @@
                     <h5 class="portfolio-description">Gameboy Advance Emulator in C++</h5>
                 </a>
             </div>
-            </div>
+        </div>
         <div id="education">
             <h1 class="section-header">Education</h1>
             <ul>
                 <li>
-                    <h2>Bachelor of Engineering (Honours)<br />Diploma in Professional Practice</h2>
-                    <p>University of Technology Sydney</p>
+                    <h2>Bachelor of Engineering (Honours) Diploma in Professional Practice (ongoing)</h2>
+                    <p>University of Technology Sydney<br>Majoring in <b>Software Engineering</b><br>Submajoring in
+                        <b>Real-time Systems</b></p>
                 </li>
             </ul>
-            <h1>Certifications</h1>
         </div>
         <div id="contact">
             <h1 class="section-header">Contact</h1>
@@ -142,9 +156,9 @@
             <h1 id="title">Message me</h1>
             <img id="open-close-button" src="/images/up.svg" />
         </div>
-        <input id="name" name="name" type="text" placeholder="Name" required/>
-        <input id="phone" name="phone" type="tel" placeholder="Phone number (optional)"/>
-        <input id="email" name="email" type="email" placeholder="Email address" required/>
+        <input id="name" name="name" type="text" placeholder="Name" required />
+        <input id="phone" name="phone" type="tel" placeholder="Phone number (optional)" />
+        <input id="email" name="email" type="email" placeholder="Email address" required />
         <textarea id="message" name="message" placeholder="Your message" required></textarea>
         <button id="submit" type="submit">Send</button>
     </form>

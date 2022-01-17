@@ -37,12 +37,17 @@ class OpenCloseButton {
         }
         
         this.open_form = () => {
-            this.button.style.transform = "rotate(180deg)";
-            this.isFormClosed = false;
-            this.form.style.bottom = "30px";
+            if (on_small_screen) {
+                this.form.scrollIntoView()
+            } else {
+                this.button.style.transform = "rotate(180deg)";
+                this.isFormClosed = false;
+                this.form.style.bottom = "30px";
+            }
         }
         this.button.addEventListener("click", this.switch_state)
     }
 }
 
+const on_small_screen = window.innerWidth < 600;
 const my_contact_form = new OpenCloseButton("open-close-button", "contact-form");
