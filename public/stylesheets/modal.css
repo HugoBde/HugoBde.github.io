@@ -1,4 +1,4 @@
-/* Modal, modal content and modal animation */
+/* Modal, modal content and modal animation
 #modal {
     position: fixed;
     top: 0;
@@ -45,7 +45,7 @@
 
 #wip {
     border: 2px solid black;
-    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    -webkit-filter: grayscale(100%); 
     filter: grayscale(100%);
 }
 
@@ -57,4 +57,4 @@
     text-align: center;
     font-size: 0.75em;
     margin-top: 0 !important;
-}
+} */
