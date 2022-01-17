@@ -43,20 +43,14 @@
 }
 
 #submit {
-    color: white;
-    background-color: black;
+    background-color: white;
     font-size: 1em;
     border: 2px solid black;
+    transition: 0.5s all;
 }
 
 #submit:hover {
-    color: black;
-    background-color: white;
-}
-
-#submit:active {
-    color: white;
-    background: black;
+    box-shadow: 0 0 5px black;
 }
 
 @media screen and (max-width: 600px) {
