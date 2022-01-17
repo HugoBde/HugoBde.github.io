@@ -44,7 +44,7 @@ class OpenCloseButton {
         this.close_form = () => {
             this.button.style.transform = "rotate(0deg)";
             this.is_form_closed = true;
-            this.form.style.bottom = closed_bottom;
+            this.form.style.bottom = 55 - my_contact_form.form.offsetHeight + "px";
             setTimeout(() => {
                 if (this.message_sent) {
                     this.form.reset();
@@ -59,7 +59,7 @@ class OpenCloseButton {
             } else {
                 this.button.style.transform = "rotate(180deg)";
                 this.is_form_closed = false;
-                this.form.style.bottom = opened_bottom;
+                this.form.style.bottom = "30px";
             }
         }
         this.button.addEventListener("click", this.switch_state)
@@ -68,6 +68,4 @@ class OpenCloseButton {
 
 const on_small_screen = window.innerWidth < 600;
 const my_contact_form = new OpenCloseButton("open-close-button", "contact-form");
-const opened_bottom = "30px";
-const closed_bottom = 55 - my_contact_form.form.offsetHeight + "px";
 my_contact_form.close_form();
