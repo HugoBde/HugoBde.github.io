@@ -69,4 +69,4 @@ class OpenCloseButton {
 
 const on_small_screen = window.innerWidth < 600;
 const my_contact_form = new OpenCloseButton("open-close-button", "contact-form");
-my_contact_form.close_form();
+setTimeout(my_contact_form.close_form, 500);
