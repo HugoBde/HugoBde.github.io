@@ -3,8 +3,9 @@
     border: 2px black solid;
     position:fixed;
     right: 30px;
-    bottom: -270px;
+    bottom: 30px;
     width: 300px;
+    /* height: 350px; */
     z-index: 1;
     display: flex;
     flex-direction: column;
@@ -40,6 +41,7 @@
 
 #contact-form >textarea {
     resize:vertical;
+    height: 100%;
 }
 
 #submit {
@@ -59,6 +61,7 @@
         position: inherit;
         box-shadow: unset;
         margin: 1em;
+        width: 80%;
     }
     #open-close-button {
         display: none;
